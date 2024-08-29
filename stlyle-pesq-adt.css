@@ -16,7 +16,7 @@ body {
     width: 10rem;
     height: 3.5rem;
     object-fit: cover;
-   
+
 }
 
 .flex{
@@ -92,7 +92,7 @@ header ul li a{
 .cont{
     display: flex;
     margin-top: 17%;
-   
+
 }
 .retorno{
     margin-right: 20px;
@@ -103,7 +103,7 @@ header ul li a{
     font-weight: bold;
     color: #2C895F;
     margin-bottom: 20px;
-   
+
     
 }
 .pet-card {

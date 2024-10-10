@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/pata-de-cachorro.png"/>
+    <title>Adote Um Amor</title>
+    <link rel="stylesheet" href="teste.css">
+    <style></style>
+</head>
+<body>
+
+    <header id="header"> <!---->
+        <div class="container"> <!-- Aq é a parte onde se inicia o corpo principal do nosso menu -->
+
+            <div class="flex"> <!-- Aq é a parte onde se encontra todos os itens do menu -->
+
+                <div class="logo"><img src="img/Cópia_de_Cópia_de_ADOTE_UM_AMOR-removebg-preview.ico" ></div> <!-- Aq é a parte da nossa logo -->
+
+                <nav> <!-- Aq é a parte da navegação do menu onde fica TDS os itens do menu -->
+                    <ul>
+                        <li><a href="#" onclick="scrollToSection(event, 'tela-sobrenos')">SOBRE NÓS</a></li>
+                        <li><a href="#" onclick="scrollToSection(event, 'tela-adoçao')">ADOÇÃO</a></li>
+                        <li><a href="#" onclick="scrollToSection(event, 'tela-adotados')">ADOTADOS</a></li>
+                        <li><a href="#" onclick="scrollToSection(event, 'apadrinhamento')">APADRINHAMENTO</a></li>
+                        <li><a href="#" onclick="scrollToSection(event, 'tela-ongs')">ONGs</a></li>
+                        
+                        
+                    </ul>
+                </nav><!--Fim da TAG nav-->
+
+                
+
+            </div><!--Fim da TAG flex-->
+
+        </div><!--Fim da TAG container-->
+    </header><!--Fim da TAG header-->
+
+    <section id="tela" class="flex-tela"><!--Aq é o início da tela de login a nossa primeira tela-->
+        <div class="text-container-login"><!--Aq é onde está toda a estrutura da tela-->
+            <img class="img-logo-login" src="img/Cópia_de_Cópia_de_ADOTE_UM_AMOR-removebg-preview.png" alt="">
+
+            <h2>ACESSE AGORA</h2>
+
+                <p>CRIE UMA CONTA E TENHA ACESSO <br>
+                    AOS NOSSOS PETS </p>
+
+            
+
+            <a href="login.html"><button class="btn-entrar">Entrar</button></a><br>
+
+            <a href="login.html">Cadastrar</a>
+            
+
+        </div>
+        
+
+        <div class="carrosel-inical"><!--corrosel da tela inícial-->
+            <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/375562427-protecao-animal.webp" alt=""></div>
+                        <div class="swiper-slide"><img src="img/Adocao-de-animais-adote-seu-amigo-na-Central-Pet.jpg" alt="" ></div>
+                        <div class="swiper-slide"><img src="img/adocao_pets_debea-209.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="img/plaza-petfrendly-5.jpeg" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+            </div>
+        </div><!--fim corrosel da tela inícial-->
+
+    </section><!--Fim da seção da primeira tela-->
+
+
+    <section id="tela-sobrenos" class="flex-container"><!--Início da seção da tela sobre nós-->
+
+        <div class="contenttela2"><!--Aq é a parte onde se encontra toda a estrutura da tela-->
+            <img class="imgsobre1" src="img/tela2sobrenos.webp" alt="Imagem de um gato" height="500px" width="400px"><!--Aq é a imagem do lado esquerdo da tela-->
+            
+            <div class="text-containertela2"><!--Aq é a parte de fica a estrutura dos textos que se encontram na tela-->
+                <div class="sobre"><h2>SOBRE NÓS:</h2></div>
+                <p>Somos um site focado em adoção de animais que tem como objetivo proporcionar uma vida incrível para os nossos pets.</p>
+                <p class="subtitle">Unidos desde Agosto de 2023.</p>
+            </div><!--Fim da TAG text-containertela2-->
+            
+            
+        </div><!--Fim da TAG onde se encontra a estrutura-->
+        
+    </section><!--Fim da seção da tela sobre nós-->
+
+    <section id="tela-adoçao" class="carousel-section"><!--Início da seção da tela adoçao-->
+        <div class="section-content"><!--titulo da pag e barra de pesquisa e filtros -->
+        <h1 class="section-title">ADOÇÃO</h1>
+        <div class="search-filters"><!--barra de pesquisa e filtros-->
+            <div class="search-bar">
+            <input type="text" placeholder="Pesquisar..." />
+            <a href="adocao.html"><button class="btn-pesquisar">Pesquisar</button></a>
+            </div>
+            <div class="filters">
+            <h3>Filtros:</h3>
+            <label><input type="checkbox"> Cidade</label>
+            <label><input type="checkbox"> ONG</label>
+            <label><input type="checkbox"> Idade</label>
+            <label><input type="checkbox"> Animal</label>
+            </div><!--fim de barra de pesquisa e filtros-->
+        </div><!--fim de titulo da pag e barra de pesquisa e filtros-->
+        </div>
+        <div class="swiper mySwiper"><!--carrossel-->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/pet3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/pet5.jpg" alt="" ></div>
+            <div class="swiper-slide"><img src="img/carros2.avif" alt=""></div>
+            <div class="swiper-slide"><img src="img/carros4.jpeg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        </div><!--fim do carrossel-->
+    </section><!--fim da tela de adoçao-->
+
+    <section id="tela-adotados" class="flex-container-tela2"><!--início da seçao da tela de Adotados-->
+        <div class="text-container-tela2"><!--titulo da seçao-->
+            <h2>ADOTADOS:</h2>
+        </div><!--fim do tilulo da seçao-->
+
+        <div class="cards-container"><!--conteudo do central da seçao-->
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/flip1.jfif" alt="Front Image 1">
+                    </div>
+                    <div class="card-back">
+                        <p><span>Nome:</span> Tico<br><span>Idade:</span> 1 ano<br><span>ONG:</span> Minha CS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/flip2.jfif" alt="Front Image 2">
+                    </div>
+                    <div class="card-back">
+                        <p><span>Nome:</span> Tico<br><span>Idade:</span> 1 ano<br><span>ONG:</span> Minha CS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/flip3.jfif" alt="Front Image 3">
+                    </div>
+                    <div class="card-back">
+                        <p><span>Nome:</span> Tico<br><span>Idade:</span> 1 ano<br><span>ONG:</span> Minha CS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/pet4 (1).jfif" alt="Front Image 4">
+                    </div>
+                    <div class="card-back">
+                        <p><span>Nome:</span> Tico<br><span>Idade:</span> 1 ano<br><span>ONG:</span> Minha CS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/pet4 (2).jfif" alt="Front Image 5">
+                    </div>
+                    <div class="card-back">
+                        <p><span>Nome:</span> Tico<br><span>Idade:</span> 1 ano<br><span>ONG:</span> Minha CS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/pet4 (3).jfif" alt="Front Image 6">
+                    </div>
+                    <div class="card-back">
+                        <p><span>Nome:</span> Tico<br><span>Idade:</span> 1 ano<br><span>ONG:</span> Minha CS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/pet1.jpg" alt="Front Image 7">
+                    </div>
+                    <div class="card-back">
+                        <p><span>Nome:</span> Tico<br><span>Idade:</span> 1 ano<br><span>ONG:</span> Minha CS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/pet2.jpg" alt="Front Image 8">
+                    </div>
+                    <div class="card-back">
+                        <p><span>Nome:</span> Tico<br><span>Idade:</span> 1 ano<br><span>ONG:</span> Minha CS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/pet3.jpg" alt="Front Image 9">
+                    </div>
+                    <div class="card-back">
+                        <p><span>Nome:</span> Tico<br><span>Idade:</span> 1 ano<br><span>ONG:</span> Minha CS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/carros1.jpeg" alt="Front Image 10">
+                    </div>
+                    <div class="card-back">
+                        <p><span>Nome:</span> Tico<br><span>Idade:</span> 1 ano<br><span>ONG:</span> Minha CS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/carros2.avif" alt="Front Image 11">
+                    </div>
+                    <div class="card-back">
+                        <p><span>Nome:</span> Tico<br><span>Idade:</span> 1 ano<br><span>ONG:</span> Minha CS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="img/pet5.jpg" alt="Front Image 12">
+                    </div>
+                    <div class="card-back">
+                        <p><span>Nome:</span> Tico<br><span>Idade:</span> 1 ano<br><span>ONG:</span> Minha CS</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--fim do conteudo central da seçao-->
+    </section><!--fim da tela Adotados-->
+    
+    <section class="tela-perfil-ongs" id="section2">
+        <div id="main-tela-perfil">
+           <div id="conteud"> 
+            <img src="img/ongs3.webp" alt="">
+            <div id="conteudo-tela-perfil">
+                <div id="conteudo-do-perfil"> 
+                    <h1>ONG Auqmia</h1>
+                    <p>ONG de animais abandonados e resgatados. Procuramos <br> lar para eles, são doados castrados, vacinados e vermifugados.</p>
+               </div>
+                <a href=""><button id="btn-chat-perfil-ongs">Chat</button></a>
+            </div>
+
+            </div>
+            <div id="btn-perfil-ongs">
+                <a href="">
+                    <button>PARA ADOÇÃO</button>
+                </a>
+                <a href="">
+                    <button>ADOTADOS</button>
+                </a>
+            </div>
+            <div id="animais-perfil-ongs">
+                <div class="aniaml-perfil">
+                    <img src="img/pet1.jpg" alt="">
+                    <p>pet1</p>
+                </div>
+                <div class="aniaml-perfil">
+                    <img src="img/pet2.jpg" alt="">
+                    <p>pet1</p>
+                </div>
+                <div class="aniaml-perfil">
+                    <img src="img/pet3.jpg" alt="">
+                    <p>pet1</p>
+                </div>
+                <div class="aniaml-perfil">
+                    <img src="img/pet4 (1).jfif" alt="">
+                    <p>pet1</p>
+                </div>
+                <div class="aniaml-perfil">
+                    <img src="img/pet4 (2).jfif" alt="">
+                    <p>pet1</p>
+                </div>
+                <div class="aniaml-perfil">
+                    <img src="img/pet5.jpg" alt="">
+                    <p>pet1</p>
+                </div>
+                <div class="aniaml-perfil">
+                    <img src="img/pet1.jpg" alt="">
+                    <p>pet1</p>
+                </div>
+                <div class="aniaml-perfil">
+                    <img src="img/pet2.jpg" alt="">
+                    <p>pet1</p>
+                </div>
+                <div class="aniaml-perfil">
+                    <img src="img/pet3.jpg" alt="">
+                    <p>pet1</p>
+                </div>
+
+            </div>
+           
+
+        </div>
+
+    </section>
+
+    <section id="tela-ongs" class="ongs"><!--início da seçao da tela de ONGs-->
+        <h1>ONGs PACEIRAS:</h1><!--titulo da seçao-->
+        <div class="elementos-dentro"><!--conteudo das ONGs-->
+            <div class="ongs-dentro"><!--ONGs 1-->
+                <img src="img/ongs1.png" alt="">
+                <p>
+                    ONG de animais <br> 
+                    abandonados e resgatados. <br> 
+                    Procuramos um lar para eles,<br>
+                    são doados castrados,<br>
+                    vacinados e vermifugados.
+
+                </p>
+            </div><!--fim ONGs 1-->
+            <div class="ongs-dentro"><!--ONGs 2-->
+                <img src="img/ongs2.png" alt="">
+                <p>
+                    ONG SOS CIDADANIA ANIMAL é uma <br>
+                    organização não-governamental, sem <br>
+                    fins lucrativos, fundada em <br>
+                    janeiro de 2009 para oferecer <br>
+                    auxílio aos animais.
+                </p>
+            </div><!--fim ONGs 2-->
+            <div class="ongs-dentro"><!--ONGs 3-->
+                <img src="img/ongs3.webp" alt="">
+                <p>
+                    A ONG Animalar é formada por <br>
+                    voluntários prestativos que <br>
+                    amam os animais e buscam<br>
+                    alternativas para reduzir os <br>
+                    maus tratos e abandono.
+
+                </p>
+            </div><!--fimONGs 3-->
+        </div><!--fim conteudo das ONGs-->
+    </section><!--fim da seçao da tela de ONGs-->
+    
+    <section class="tela-fim"><!--início da seçao do rodapé da pag-->
+        <img id="logo1" src="img/Mask group.png">
+
+        <h3>UNIDOS DESDE AGOSTO DE 2023. </h3>
+
+        <div class="elementos-texto"><!--conteudo do rodapé-->
+
+            <div class="elementos-texto-dentro" >
+                <h4>MATENHA CONTATO!</h4>
+
+                <a href=""><img src="img/instagram.png" alt="">Instagram</a>
+                <a href=""><img src="img/facebook.png" alt="">Facebook</a>
+                
+            </div>
+            <div class="elementos-texto-dentro">
+                <h4>FALE CONOSCO!</h4>
+                <a href=""><img src="img/fone-de-ouvido (2).png" alt="" >SAC</a><br>
+                
+                <p >Local de atendimento <br>
+                    ao cliente onde<br>
+                    esclarecmos dúvidas <br>
+                    e recebemos denúncias.
+                    </p>
+            </div>
+            <div class="elementos-texto-dentro">
+                <a href=""><img src="img/aperto-de-mao.png" alt=""> AJUDA</a><br>
+                <P>Alto atendidmento.</p>
+            </div>
+            <div class="elementos-texto-dentro">
+                <a href=""> <img src="img/balao-de-pensamento.png" alt="">CONTATO</a><br>
+            
+                <P>Contato: 3255-5564</P>
+            </div>
+
+
+        </div><!--fim conteudo do rodapé-->
+
+
+    </section><!--fim da seçao do rodapé da pag-->
+
+
+<script src="app.js"></script><!--nao mexer nessa area tem alguns scripts do site-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,},
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    });
+</script><!--nao mexer nessa area tem alguns scripts do site-->
+<script>
+    // Obtém a seção que deve ser exibida
+    const sectionToShow = localStorage.getItem('sectionToShow');
+    if (sectionToShow) {
+        // Exibe a seção desejada e oculta as outras
+        document.getElementById(sectionToShow).style.display = 'block';
+    }
+</script>
+</body>
+</html>

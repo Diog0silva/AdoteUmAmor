@@ -832,7 +832,7 @@ button:active {
 
 #animais-perfil-ongs{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: auto;           
     gap: 20px;                             
     overflow: auto;
@@ -859,7 +859,7 @@ button:active {
     background-color: #83e4b8;
     color: #2c895f;
     text-align: center;       
-   width: 50%;  
+    width: 67%;  
 }
 
 .aniaml-perfil{

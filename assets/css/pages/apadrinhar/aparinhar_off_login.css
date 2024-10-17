@@ -1,0 +1,104 @@
+@import url("../../global_css/global.css");
+
+.container-tela-adt {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.cont{
+    display: flex;
+    margin-top: 17%;
+
+}
+.retorno{
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C895F;
+    margin-bottom: 20px;
+
+    
+}
+.pet-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(14, 179, 69, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+.pet-card:hover {
+    box-shadow: 0 6px 12px rgba(12, 185, 27, 0.753);
+}
+.pet-image {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.pet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pet-details {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+.pet-nome {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.pet-ong {
+    margin-top: 15px;
+    color: #777;
+    margin-bottom: 10px;
+}
+.pet-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.pet-info div {
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #2C895F;
+    font-size: 18px;
+}
+
+.passar-pag{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.passar-pag li {
+    margin: 0 5px;
+}
+
+.passar-pag a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #2C895F;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.passar-pag a:hover {
+    background-color: #444;
+}
+
+.passar-pag .active a {
+    background-color: #006d77;
+}

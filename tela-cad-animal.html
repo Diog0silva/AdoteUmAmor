@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/pata-de-cachorro.png"/>
+    <title>Adote Um Amor</title>
+<link rel="stylesheet" href="assets/css/pages/solicitacao/solicitacao.css">
+<link rel="stylesheet" href="teste.css">
+    </style>
+</head>
+<body>
+    <header id="header"> <!---->
+        <div class="container"> <!-- Aq é a parte onde se inicia o corpo principal do nosso menu -->
+
+            <div class="flex"> <!-- Aq é a parte onde se encontra todos os itens do menu -->
+
+                <div class="logo"><img src="img/Cópia_de_Cópia_de_ADOTE_UM_AMOR-removebg-preview.ico" ></div> <!-- Aq é a parte da nossa logo -->
+
+                <nav> <!-- Aq é a parte da navegação do menu onde fica TDS os itens do menu -->
+                    <ul>
+                    <li><a href="index.html#tela-sobrenos">SOBRE NÓS</a></li>
+                    <li><a href="index.html#tela-adotados" >ADOTADOS</a></li>
+                    <li><a href="index.html#apadrinhamento">APADRINHAMENTO</a></li>
+                    <li><a href="index.html#tela-adoçao">ADOÇÃO</a></li>
+                    <li><a href="index.html#tela-ongs">ONGs</a></li>
+                        
+                    </ul>
+                </nav><!--Fim da TAG nav-->
+
+                <div class="btn-contato">
+                    <button id="hamburguer-btn">Logado</button>
+                </div>
+
+                <!-- Menu que será mostrado ao clicar no botão -->
+                <div id="menu-hamburguer" class="menu-hamburguer">
+                    <ul>
+                        <li><a href="#">perfil</a></li>
+                        <li><a href="#">Conta</a></li>
+                        <li><a href="#">Cadastrar Animal</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            </div>
+
+            </div><!--Fim da TAG flex-->
+
+
+
+            <section class="tela-cad-animal">
+                <div id="titulo-form-cad-animal">
+                    <h3>Cadastrar animal</h3>
+                </div>
+                
+                <form>
+                    <div id="cad-animal">
+                        <label for="nome">Nome do Animal:</label>
+                        <input type="text" id="nome" name="nome" placeholder="ex:Tico">
+                    </div>
+                
+                    <div id="cad-animal">
+                        <label for="raca">Raça:</label>
+                        <input type="text" id="raca" name="raca" placeholder="ex: Vira-lata">
+                    </div>
+                
+                    <div id="cad-animal">
+                        <label for="idade">Idade:</label>
+                        <input type="text" id="idade" name="idade" placeholder="ex: 2 anos">
+                    </div>
+                
+                    <div id="cad-animal">
+                        <label for="status">Status de Saúde:</label>
+                        <select id="status" name="status">
+                            <option value="saudavel">Saudável</option>
+                            <option value="doente">Doente</option>
+                            <option value="ferido">Ferido</option>
+                        </select>
+                    </div>
+                    
+                    <label>
+                        <p>Imagem do animal</p>
+                        <input type="file" accept="image/*">
+                    </label>
+            
+                    <input type="submit" value="Cadastrar Animal">
+                </form>
+            </section>
+            
+            
+            <script src="teste.js"></script>
+
+        </div><!--Fim da TAG container-->
+    </header><!--Fim da TAG header-->
+   
+
+
+</body>
+</html>

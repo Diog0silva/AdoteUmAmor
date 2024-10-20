@@ -1,5 +1,5 @@
-@import url("../../../global_css/global.css");
-@import url("../index/partes/section_sobre_nos/section_sobre_nos.css");
+@import url("../../global_css/global.css");
+@import url("../../pages/index/partes/section_rodape/section_rodape.css");
 
 .tela-perfil-ongs{
     display: flex;

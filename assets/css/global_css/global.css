@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/*munu*/
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+    
+}
+#header{
+    background: linear-gradient(135deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px 4%;
+}
+
+.logo img{
+    width: 10rem;
+    height: 3.5rem;
+    object-fit: cover;
+    
+    
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content:space-around ;
+    
+}
+
+header{
+    width: 100%;
+    padding: 30px 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 1000 
+    
+}
+
+header.rolagem{
+    background: linear-gradient(135deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 10px 4%;
+}
+
+header.rolagem a, header.rolagem i,header.rolagem .logo {
+    color:#2C895F;
+    
+}
+
+header i{
+    font-size: 30px;
+    color:#2C895F;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #2C895F;
+    font-size: 20px;
+    font-family: "Noto Sans", sans-serif;
+    text-decoration: none;
+    
+}
+
+.btn-contato button {
+    width: 120px;
+    height: 40px;;
+    background-color: #1a772a;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    border: none;
+    border-radius: 45px;
+}

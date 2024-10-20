@@ -1,0 +1,149 @@
+@import url("../../../global_css/global.css");
+@import url("../../index/partes/section_rodape/section_rodape.css");
+
+.tela-perfil-ongs{
+    display: flex;
+    
+}
+#conteud{
+ 
+    display: flex;
+    margin-top: 5%;
+    margin-left: 4%;
+    gap: 60px;
+    
+}
+
+#conteudo-tela-perfil{
+    display: flex;
+    flex-direction: column;
+   margin-top: 3%;
+   gap: 40px;
+   align-items: center;
+
+}
+#conteudo-tela-perfil h1{
+    color: #256d4d;
+    font-size: 4rem; 
+}
+#conteudo-tela-perfil p{
+    color: #000000;
+    font-size: 2rem; 
+    
+}
+
+#conteudo-do-perfil{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+#conteud img{
+    object-fit: cover;
+    width: 300px;
+    height: 310px;
+    margin: 10px 0;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+
+#conteudo-tela-perfil a{
+    text-decoration: none; 
+}
+#btn-chat-perfil-ongs{
+    font-size: 25px;      
+    padding: 10px 25px;  
+    border-radius: 20px;
+    background-color: #256d4d;
+    border: none;
+
+
+}
+
+#btn-perfil-ongs{
+    margin-top: 3%;
+    display: flex;
+ 
+}
+
+#btn-perfil-ongs a{
+    text-decoration: none; 
+
+}
+
+
+#btn-perfil-ongs button{
+    font-size: 25px;      
+    padding: 15px 256px;  
+    border: 1px solid #000000;
+    background-color: #F6F6F6;
+    color: #000;
+
+}
+
+#btn-perfil-ongs button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#animais-perfil-ongs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto;           
+    gap: 20px;                             
+    overflow: auto;
+    padding: 10px;
+    width: 97%;
+    height: 80vh;
+    margin-left: 3%;
+    scroll-behavior: smooth;  
+    cursor: pointer;
+}
+
+#animais-perfil-ongs:hover {
+    cursor: grabbing; 
+}
+
+.aniaml-perfil img{
+    width: 200px;
+    height: 200px;
+    border: 2px ;
+
+}
+.aniaml-perfil p{
+    font-size: 20px;          
+    background-color: #83e4b8;
+    color: #2c895f;
+    text-align: center;       
+    width: 67%;  
+}
+
+.aniaml-perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+#animais-perfil-ongs::-webkit-scrollbar {
+    width: 5px;            
+    height: 10px;
+}
+
+#animais-perfil-ongs::-webkit-scrollbar-thumb {
+    background-color: #27723e; 
+    border-radius: 10px;       
+}
+
+#animais-perfil-ongs::-webkit-scrollbar-track {
+    background-color: #f0f0f0; 
+}
+
+
+#animais-perfil-ongs {
+    scrollbar-width: thin;                      
+    scrollbar-color: #27723e #f0f0f0;           
+}

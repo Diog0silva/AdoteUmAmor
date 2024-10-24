@@ -32,9 +32,18 @@
                     </ul>
                 </nav><!--Fim da TAG nav-->
 
-                <div class="btn-contato"><!--Aq é o nosso Botão de login do menu-->
-                    <a href="login.html"><button>LOGADO</button></a>
-                </div><!--Fim da TAG btn-contato-->
+                <div class="btn-contato">
+                    <button id="hamburguer-btn">Logado</button>
+                </div>
+
+                <!-- Menu que será mostrado ao clicar no botão -->
+                <div id="menu-hamburguer" class="menu-hamburguer">
+                    <ul>
+                        <li><a href="#">perfil</a></li>
+                        <li><a href="#">Conta</a></li>
+                        <li><a href="#">Sair</a></li>
+                    </ul>
+                </div>
 
             </div><!--Fim da TAG flex-->
 
@@ -332,5 +341,6 @@
 <script src="assets/js/app.js"></script><!--nao mexer nessa area tem alguns scripts do site-->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/carrosel.js"></script>
+<script src="assets/js/menu_retraido.js"></script>
 </body>
 </html>

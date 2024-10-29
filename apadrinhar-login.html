@@ -27,9 +27,18 @@
                 </ul>
             </nav><!--Fim da TAG nav-->
 
-            <div class="btn-contato"><!--Aq é o nosso Botão de login do menu-->
-                <a href="#"><button>LOGADO</button></a>
-            </div><!--Fim da TAG btn-contato-->
+            <div class="btn-contato">
+                <button id="hamburguer-btn">Logado</button>
+            </div>
+
+            <!-- Menu que será mostrado ao clicar no botão -->
+            <div id="menu-hamburguer" class="menu-hamburguer">
+                <ul>
+                    <li><a href="#">perfil</a></li>
+                    <li><a href="#">Conta</a></li>
+                    <li><a href="#">Sair</a></li>
+                </ul>
+            </div>
 
         </div><!--Fim da TAG flex-->
 
@@ -129,5 +138,6 @@
     </ul><!--fim de passar pag-->
         
 </div><!--fim do conteudo central-->
+<script src="assets/js/menu_retraido.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/jpg" href="img/pata-de-cachorro.png"/>
     <title>Adote Um Amor</title>
-    <link rel="stylesheet" href="assets/css/pages/chat/chat_apadrinhamento/chat_apd.css">
+    <link rel="stylesheet" href="assets/css/pages/perfil/perfil.css">
 </head>
 <body>
 <header id="header"> <!---->
@@ -28,15 +28,15 @@
             </nav><!--Fim da TAG nav-->
 
             <div class="btn-contato">
-                <button id="hamburguer-btn">Logado</button>
+                <button id="hamburguer-btn">Login</button>
             </div>
 
             <!-- Menu que será mostrado ao clicar no botão -->
             <div id="menu-hamburguer" class="menu-hamburguer">
                 <ul>
                     <li><a href="#">perfil</a></li>
-                    <li><a href="#">Conta</a></li>
-                    <li><a href="#">Sair</a></li>
+                    <li><a href="conta.html">Conta</a></li>
+                    <li><a href="index.html">Sair</a></li>
                 </ul>
             </div>
 
@@ -44,32 +44,33 @@
 
     </div><!--fim de container-->
 </header><!--fim de header-->
-<div class="chat-container"><!--conteudo central-->
-    <div class="chat-header"><!--contudo no titulo do chat-->
-        <a href="apadrinhar-login.html" class="back-button"><img src="img/arrow_back_24dp_FILL0_wght400_GRAD0_opsz24 (2).png" height="20px" ></a>
-        <h3>Chat Apadrinhamento</h3>
-    </div><!--fim do conteudo do titulo do chat-->
-    <div class="chat-body"><!--inlustraçao de msg-->
-        <div class="chat-res1">
-            Como posso apadrinhar essa ONGs?
-        </div>
-        
 
-        <div class="chat-res">
-        Olá, é muito só precisamos de algumas informação suas
+<div class="perfil">
+    <div id="cabecalho-perfil">
+        <a href="adocao-login.html" class="back-button"><img src="img/anterior.png" height="30px" ></a>
+        <h1>Perfil</h1>
+    </div>
 
-        </div>
-        <div class="chat-res2">
-            quais seriam?
-        </div>
+    <div class="profile-container" onclick="document.getElementById('fileInput').click();">
+        <img src="img/foto-de-perfil-de-usuario-masculino.png" alt="Foto do Usuário" class="profile-image" id="profileImage">
+        <div class="overlay">Alterar Foto</div>
+    </div>
+
+    <input type="file" id="fileInput" accept="image/*" onchange="updateProfileImage(event)">
+
+    <div class="nome-perfil">
+        <input class="barra-alteracao" type="text" placeholder="Nome do Usuário">
+    </div>
+
+    <button id="btn-salvamento">Salvar Alterações</button>
+
+</div>
+
     
-
-    </div><!--fim de inlustraçao-->
-    <div class="chat-footer"><!--campo de escrita-->
-        <input type="text" placeholder="digite...">
-        <input type="submit" value="Enviar">
-    </div><!--fim campo de escrita-->
-</div><!--fim conteudo central-->
+        
+</div><!--fim do conteudo central-->
 <script src="assets/js/menu_retraido.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/tela-perfil.js"></script>
 </body>
 </html>

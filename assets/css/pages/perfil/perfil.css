@@ -1,0 +1,117 @@
+@import url(../../global_css/global.css);
+
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-top: 5%;
+    gap: 3%;
+}
+
+
+#cabecalho-perfil {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+#cabecalho-perfil .back-button {
+    position: absolute;
+    left: 0;
+}
+
+
+#cabecalho-perfil h1 {
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+.profile-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.profile-container:hover .overlay {
+    opacity: 1;
+}
+
+
+#fileInput {
+    display: none;
+}
+
+.nome-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-top: 3%;
+}
+
+.nome-perfil input {
+    border: none;
+    font-size: 16px;
+    background: #f5f5f5;
+    text-align: center;
+    outline: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+
+#btn-salvamento {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 3%;
+}
+
+#btn-salvamento:hover {
+    background-color: #218838;
+}

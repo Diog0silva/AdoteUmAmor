@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/jpg" href="img/pata-de-cachorro.png"/>
     <title>Adote Um Amor</title>
-    <link rel="stylesheet" href="assets/css/pages/chat/chat_apadrinhamento/chat_apd.css">
+    <link rel="stylesheet" href="assets/css/pages/conta/conta.css">
 </head>
 <body>
 <header id="header"> <!---->
@@ -28,7 +28,7 @@
             </nav><!--Fim da TAG nav-->
 
             <div class="btn-contato">
-                <button id="hamburguer-btn">Logado</button>
+                <button id="hamburguer-btn">Login</button>
             </div>
 
             <!-- Menu que será mostrado ao clicar no botão -->
@@ -44,32 +44,38 @@
 
     </div><!--fim de container-->
 </header><!--fim de header-->
-<div class="chat-container"><!--conteudo central-->
-    <div class="chat-header"><!--contudo no titulo do chat-->
-        <a href="apadrinhar-login.html" class="back-button"><img src="img/arrow_back_24dp_FILL0_wght400_GRAD0_opsz24 (2).png" height="20px" ></a>
-        <h3>Chat Apadrinhamento</h3>
-    </div><!--fim do conteudo do titulo do chat-->
-    <div class="chat-body"><!--inlustraçao de msg-->
-        <div class="chat-res1">
-            Como posso apadrinhar essa ONGs?
-        </div>
-        
+<div class="tela-conta">
 
-        <div class="chat-res">
-        Olá, é muito só precisamos de algumas informação suas
-
+<div class="conteudo-titulo">
+    <a href="adocao-login.html" class="back-button"><img src="img/anterior.png" height="30px" ></a>
+    <h1>Dados da conta:</h1>
+</div>
+   
+    <div class="container1">
+        <div class="input-container1">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail">
         </div>
-        <div class="chat-res2">
-            quais seriam?
+        <div class="input-container1">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" placeholder="Digite seu telefone">
         </div>
+        <div class="input-container1">
+            <label for="localizacao">Localização:</label>
+            <input type="text" id="localizacao" placeholder="Digite sua localização">
+        </div>
+        <button class="btn-save">Salvar alterações</button>
+        <button class="btn-delete">Excluir conta</button>
+    </div>
     
 
-    </div><!--fim de inlustraçao-->
-    <div class="chat-footer"><!--campo de escrita-->
-        <input type="text" placeholder="digite...">
-        <input type="submit" value="Enviar">
-    </div><!--fim campo de escrita-->
-</div><!--fim conteudo central-->
+</div>
+
+    
+        
+</div><!--fim do conteudo central-->
 <script src="assets/js/menu_retraido.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/tela-perfil.js"></script>
 </body>
 </html>

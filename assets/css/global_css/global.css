@@ -71,6 +71,7 @@ header ul{
 header ul li{
     display: inline-block;
     margin: 0 40px;
+    position: relative;
 }
 
 header ul li a{
@@ -78,19 +79,19 @@ header ul li a{
     font-size: 20px;
     font-family: "Noto Sans", sans-serif;
     text-decoration: none;
+    position: relative;
     
 }
 
 .btn-contato button {
-    width: 120px;
-    height: 40px;
+    padding: 10px;
     background-color: #1a772a;
-    color: #fff;
-    cursor: pointer;
-    transition: .2s;
-    border: none;
-    border-radius: 45px;
+    display: inline-block;          
+    border-radius: 50%;  
+    border: none; 
 }
+
+  
 
 .btn-contato button:hover {
     background-color: #145a1f;
@@ -132,4 +133,23 @@ header ul li a{
 
 .menu-hamburguer.active {
     display: block;
+}
+
+header ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #2C895F;
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    transition: width 0.4s ease; 
+}
+
+header ul li a:hover::after {
+    width: 100%; 
+}
+
+.img-btn-contato img{
+    width: 30px;
 }

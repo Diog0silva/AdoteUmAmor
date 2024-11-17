@@ -181,20 +181,36 @@
     border: none;
     background-color: #ecf0f1;
     
+    
 }
 input:-webkit-autofill 
 {    
     -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
     -webkit-text-fill-color: #000 !important;
+    
 }
 .label-input {
-    background-color: #ecf0f1;
+    
     display: flex;
     align-items: center;
-    margin: 8px;
-    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+
  
 }
+
+.label-input input{
+    width: 100%;
+    
+}
+
+input:hover{
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    border: 2px solid #2C895F;
+    
+}
+
+
 .icon-modify {
     color: #7f8c8d;
     padding: 0 5px;
@@ -274,13 +290,13 @@ input:-webkit-autofill
 
     z-index: -1;
     position: relative;
-    animation: deslocamentoEsq 1.3s; 
+    animation: deslocamentoEsq 0.1s; 
 }
 
 .sign-up-js .second-content .second-column {
     position: relative;
     z-index: -1;
-    animation: deslocamentoDir 1.3s; 
+    animation: deslocamentoDir 0.1s; 
 }
 
 /*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
@@ -394,4 +410,3 @@ input:-webkit-autofill
         width: 40%;
     }
 }
-

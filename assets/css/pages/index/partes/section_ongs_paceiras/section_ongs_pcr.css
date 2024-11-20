@@ -36,8 +36,9 @@
     height: 230px;
     margin: 10px 0;
     border-radius: 50%;
-    border: 2px solid #2C895F;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
+
 
 .ongs-dentro p {
     margin-top: 10px;

@@ -3,7 +3,7 @@
 $hostname = "localhost";
 $usuario = "root";
 $senha = ""; // se tiver senha, coloque aqui
-$bancodedados = "cad_usuario";
+$bancodedados = "diogo";
 
 
 
@@ -18,9 +18,10 @@ if (!$conn) {
 echo "Connected successfully";
 
 $nome = $_POST['nome'];
-$raca = $_POST['raca'];
-$sexo =$_POST['sexo'];
-$sql ="INSERT INTO cadanimal (nome,raca,sexo) VALUES('$nome','$raca','$sexo')";
+$cpf = $_POST['cpf'];
+$email = $_POST['email'];
+$senha = md5($_POST['senha']);
+$sql ="INSERT INTO cad (nome,cpf,email,senha) VALUES('$nome','$cpf','$email','$senha')";
 if($conn->query($sql) ===TRUE) {
     echo "usuário cadastrado!";
 } else{

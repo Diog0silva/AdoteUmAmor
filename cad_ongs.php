@@ -1,11 +1,8 @@
 <?php
-
 $hostname = "localhost";
 $usuario = "root";
 $senha = ""; // se tiver senha, coloque aqui
-$bancodedados = "diogo";
-
-
+$bancodedados = "cad_usuario";
 
 // Criando conexão
 $conn = mysqli_connect($hostname, $usuario, $senha, $bancodedados);
@@ -15,17 +12,19 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-echo "Connected successfully";
-
 $nomee = $_POST['nomee'];
-$cnpj = $_POST['cnpj'];
+$cnpj= $_POST['cnpj'];
 $emaill = $_POST['emaill'];
-$senhaa = md5($_POST['senhaa']);
-$sql ="INSERT INTO ongs (nomee,cnpj,emaill,senhaa) VALUES('$nomee','$cnpj','$emaill','$senhaa')";
-if($conn->query($sql) ===TRUE) {
-    echo "usuário cadastrado!";
-} else{
-    echo "Não foi possivel cadastrar usuário!".$conn->error;
+$senhaa = $_POST['senhaa']; // Senha em texto simples
+
+// Inserir os dados no banco (com senha em texto simples)
+$sql = "INSERT INTO ongs (nome, cnpj, email, senha) VALUES ('$nomee', '$cnpj', '$emaill', '$senhaa')";
+if ($conn->query($sql) === TRUE) {
+    echo "Usuário cadastrado!";
+    header("location:index-com-login.html");
+    exit();
+} else {
+    echo "Não foi possível cadastrar o usuário! " . $conn->error;
 }
 
 $conn->close();

@@ -1,12 +1,11 @@
 <?php
-$hostname = "junction.proxy.rlwy.net";
-$porta = 50659;
+$hostname = "localhost";
 $usuario = "root";
-$senha = "HTebSIVzfAbvJXYUUcgHRrndBGyIJslW"; // se tiver senha, coloque aqui
-$bancodedados = "railway";
+$senha = ""; // se tiver senha, coloque aqui
+$bancodedados = "cad_usuario";
 
 // Criando conexão
-$conn = mysqli_connect($hostname, $porta, $usuario, $senha, $bancodedados);
+$conn = mysqli_connect($hostname, $usuario, $senha, $bancodedados);
 
 // Verificando a conexão
 if (!$conn) {

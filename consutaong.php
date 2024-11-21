@@ -1,6 +1,6 @@
 <?php
 // Conectar ao banco de dados
-$conexao = new mysqli("junction.proxy.rlwy.net", "root", "HTebSIVzfAbvJXYUUcgHRrndBGyIJslW", "railway");
+$conexao = new mysqli("localhost", "root", "", "cad_usuario");
 
 // Verificando a conexão
 if ($conexao->connect_error) {

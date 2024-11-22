@@ -1,6 +1,6 @@
 <?php
 // Conectar ao banco de dados
-$conexao = new mysqli("localhost", "root", "", "cad_usuario");
+$conexao = new mysqli("mysql.freehostia.com", "slasla11_adote", "ajuda3439", "slasla11_adote");
 
 // Verificando a conexão
 if ($conexao->connect_error) {

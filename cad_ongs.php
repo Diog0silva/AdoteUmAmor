@@ -1,9 +1,8 @@
 <?php
-$hostname = "localhost";
-$usuario = "root";
-$senha = ""; // se tiver senha, coloque aqui
-$bancodedados = "cad_usuario";
-
+$hostname = "mysql.freehostia.com";
+$usuario = "slasla11_adote";
+$senha = "ajuda3439"; // se tiver senha, coloque aqui
+$bancodedados = "slasla11_adote";
 // Criando conexão
 $conn = mysqli_connect($hostname, $usuario, $senha, $bancodedados);
 

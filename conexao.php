@@ -17,9 +17,6 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-// Debug: Verificar se o email é recebido corretamente
-echo "Email recebido: " . $email . "<br>";
-
 // Preparar a consulta SQL para verificar o email
 $sql = "SELECT email, senha FROM pessoas WHERE email = ?";
 $stmt = $conexao->prepare($sql);
@@ -42,10 +39,10 @@ if ($result && $result->num_rows > 0) {
     if ($senha == $row['senha']) {
         header("location:index-com-login.html");
     } else {
-        echo "Senha incorreta.";
+        header("location:tela-erro-login.html");
     }
 } else {
-    echo "Email não encontrado.";
+    header("location:tela-erro-login.html");
 }
 
 $stmt->close();
